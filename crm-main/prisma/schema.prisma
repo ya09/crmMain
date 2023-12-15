@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model ad {
+  id              Int    @id @default(autoincrement())
+  nomeLead        String @db.VarChar(299)
+  cpf_cnpj        String @db.VarChar(299)
+  sobre           String @db.VarChar(299)
+  nome            String @db.VarChar(299)
+  telefone        String @db.VarChar(299)
+  email           String @db.VarChar(299)
+  origem          String @db.VarChar(299)
+  campanha        String @db.VarChar(299)
+  situacao        String @db.VarChar(299)
+  data            String @db.VarChar(299)
+  unidade         String @db.VarChar(299)
+  progresso       String @db.VarChar(299)
+  titulo          String @db.VarChar(299)
+  responsavel     String @db.VarChar(299)
+  dataAtualizacao String @db.VarChar(299)
+}
+
+model tag {
+  id          Int    @id @default(autoincrement())
+  nome        String @db.VarChar(299)
+  responsavel String @db.VarChar(299)
+  data        String @db.VarChar(299)
+  situacao    String @db.VarChar(299)
+}
+
+model campanha {
+  id         Int    @id @default(autoincrement())
+  nome       String @db.VarChar(299)
+  unidade    String @db.VarChar(299)
+  dataInicio String @db.VarChar(299)
+  dataFinal  String @db.VarChar(299)
+  data       String @db.VarChar(299)
+  situacao   String @db.VarChar(299)
+  descricao  String @db.VarChar(299)
+}
+
+model origem {
+  id          Int    @id @default(autoincrement())
+  nome        String @db.VarChar(299)
+  responsavel String @db.VarChar(299)
+  data        String @db.VarChar(299)
+  situacao    String @db.VarChar(299)
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model responsavel {
+  id      Int
+  nome    String @db.VarChar(299)
+  unidade String @db.VarChar(299)
+
+  @@ignore
+}
+
+model unidade {
+  id       Int    @id @default(autoincrement())
+  nome     String @db.VarChar(299)
+  endereco String @db.VarChar(299)
+  data     String @db.VarChar(299)
+  status   String @db.VarChar(299)
+}

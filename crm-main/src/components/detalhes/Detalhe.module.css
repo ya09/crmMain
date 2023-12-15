@@ -1,0 +1,49 @@
+.titulo{
+    padding-top: 2%;
+    font-size: 18px;
+    margin-left: 5%;
+}
+.tela{
+    padding-top: 2%;
+    background-color: #e6e6e6;
+     height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    padding-bottom: 2%;
+}
+.boxBot{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 70%;
+}
+.botao{
+   margin-right: 5px;
+}
+.bot{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.card{
+    display: flex;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    padding-bottom: 1%;
+    border: none;
+}
+.cont{
+    margin-left: 3%;
+}
+.botao{
+    background-color: orange;
+    border: none;
+    margin-top: 1%;
+    
+}
+.botao:hover{
+    background-color: rgb(253, 83, 22);
+}

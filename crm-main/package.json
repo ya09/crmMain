@@ -1,0 +1,48 @@
+{
+  "name": "integrato",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@prisma/client": "^5.1.1",
+    "@react-spring/web": "^9.7.3",
+    "babel-plugin-macros": "^3.1.0",
+    "bootstrap": "^5.3.1",
+    "eslint": "8.46.0",
+    "eslint-config-next": "^13.4.12",
+    "framer-motion": "^10.15.0",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.14.2",
+    "react-scroll-progress-bar": "^1.1.13",
+    "react-spring": "^9.7.2",
+    "react-transition-group": "^4.4.5",
+    "sweetalert2": "^11.7.20"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "devDependencies": {
+    "prisma": "^5.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ya009/integrato.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ya009/integrato/issues"
+  },
+  "homepage": "https://github.com/ya009/integrato#readme"
+}
